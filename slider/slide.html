@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .hao-slide {
+            display: none;
+        }
+
+        .hao-box {
+            position: relative;
+            width: 600px;
+        }
+
+        button {
+            width: 30px;
+            height: 70px;
+            border: 0;
+            cursor: pointer;
+            opacity: 0.4;
+            outline: 0;
+        }
+
+        .show {
+            width: 100%;
+            display: block;
+        }
+
+        .left {
+            left: 0;
+        }
+
+        .right {
+            right: 0;
+        }
+
+        .vitical-center {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .horizon-center {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .indicators {
+            bottom: 10px;
+            width: 150px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .hao-slide-indi {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: red;
+        }
+
+        .white {
+            background: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="hao-box">
+        <img class="hao-slide show" id="hao-picture-1" src="slideimages/1.jpg"  alt="">
+        <img class="hao-slide" id="hao-picture-2" src="slideimages/2.jpg" alt="" >
+        <img class="hao-slide" id="hao-picture-3" src="slideimages/3.jpg" alt="" >
+        <button class="vitical-center left " data-offset="-1"><</button>
+        <button class="vitical-center right " data-offset="1">></button>
+        <div class="indicators horizon-center">
+            <div id="hao-indi-1" class="hao-slide-indi white" data-index="1"></div>
+            <div id="hao-indi-2" class="hao-slide-indi" data-index="2"></div>
+            <div id="hao-indi-3" class="hao-slide-indi" data-index="3"></div>
+        </div>
+    </div>
+    <script src="slide.js"></script>
+</body>
+</html>
