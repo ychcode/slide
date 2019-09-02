@@ -2,4 +2,4 @@
 
 ##  Screen
 
-![](https://github.com/ychcode/slide/raw/master/display.png)
+![](https://github.com/ychcode/slide/raw/master/slider/display.png)
